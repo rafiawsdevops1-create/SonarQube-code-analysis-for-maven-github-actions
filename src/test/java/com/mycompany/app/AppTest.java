@@ -1,20 +1,14 @@
 package com.mycompany.app;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class AppTest {
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testGreet() {
+        App app = new App();
+        assertEquals("Hello SonarCloud!", app.greet());
     }
 }
+
